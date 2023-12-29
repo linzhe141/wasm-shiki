@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "copy": "shx mkdir -p public/shiki && shx cp -r node_modules/shiki/{dist,themes} public/shiki/ && shx mkdir -p public/shiki/languages && shx cp -r node_modules/shiki/languages/{jsx.tmLanguage.json,vue.tmLanguage.json} public/shiki/languages",
+    "copy1": "shx mkdir -p public/shiki && shx cp -r node_modules/shiki/{dist,themes} public/shiki/ && shx mkdir -p public/shiki/languages && shx cp -r node_modules/shiki/languages/{jsx.tmLanguage.json,vue.tmLanguage.json} public/shiki/languages",
+    "copy": "shx mkdir -p public/shiki && shx cp -r node_modules/shiki/{dist,languages,samples,themes} public/shiki/",
     "dev": "npm run copy && vite",
     "build": "npm run copy && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
